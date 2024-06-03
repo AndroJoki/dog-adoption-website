@@ -1,0 +1,26 @@
+<div class="navbar">
+    <img src="assets\floofhaven-high-resolution-logo-transparent.png" alt="Your Logo" class="logo">
+    <div class = "navright">
+        <h3 style="color: white; padding-right: 20px;">Hello User!</h3>
+        <button class="button-30" role="button" [routerLink]="['/login']">Logout</button>
+    </div>
+</div>
+<div class="press"><button class="button-29" role="button" [routerLink]="['/user/dogs/']">Back</button></div>
+<body>
+    <div class="container">
+        <br>
+        <img src={{dog.image}} class="dogpic" width="350" height="200">
+        <label for="name-label" id="name-label">Name:&nbsp;&nbsp;&nbsp;</label>
+        <input id="Name" type="text" placeholder="Name"  value = "{{dog.name}}" #name readonly><br><br>
+        <label for="breed-label" id="breed-label">Breed:&nbsp;&nbsp;&nbsp;</label>
+        <input id="Breed" type="text" placeholder="Breed"  value = "{{dog.breed}}" #breed readonly><br><br>
+        <label for="color-label" id="color-label">Color:&nbsp;&nbsp;&nbsp;</label>
+        <input id="Color" type="text" placeholder="Color"  value = "{{dog.color}}" #color readonly><br><br>
+        <label for="age-label" id="age-label">&nbsp;&nbsp;&nbsp;Age:&nbsp;&nbsp;&nbsp;</label>
+        <input id="Age" type="number" placeholder="Age"  value = "{{dog.age}}" #age readonly><br><br>
+        <label for="status-label" id="status-label">Notes:&nbsp;&nbsp;&nbsp;</label>
+        <input id="Status" type="text" placeholder="Status"  value = "{{dog.status}}" #status readonly><br><br>
+        <button class="button-29" role="button" 
+        (click)="adopt()" [routerLink]="['/user/dogs/']">Adopt</button>
+    </div>
+</body>

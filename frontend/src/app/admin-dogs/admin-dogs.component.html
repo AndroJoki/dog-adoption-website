@@ -1,0 +1,28 @@
+<div class="navbar">
+    <img src="assets\floofhaven-high-resolution-logo-transparent.png" alt="Your Logo" class="logo">
+    <div class = "navright">
+        <h3 style="color: white; padding-right: 20px;">Welcome Admin!</h3>
+        <button class="button-30" role="button" [routerLink]="['/login']">Logout</button>
+    </div>
+</div>
+<h2 style="margin-left:20px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Available for Adoption</h2>
+<body>
+    <div class="dog-card" *ngFor="let dog of dogs" [routerLink]="['/admin/dog/', dog.id]">
+        <img src={{dog.image}} alt="Dog photo">
+        <div class="dog-details">
+            <span>{{dog.name}}</span>
+            <button type="button" class="delete" title="delete hero" (click)="delete(dog)">X</button>
+        </div>
+    </div>
+    <div class="add" [routerLink]="['/add/']">
+        <h1 class="plus">+</h1>
+    </div>
+    
+</body>
+
+
+
+  
+  
+
+

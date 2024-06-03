@@ -1,0 +1,28 @@
+<div class="navbar">
+    <img src="assets\floofhaven-high-resolution-logo-transparent.png" alt="Your Logo" class="logo">
+    <div class = "navright">
+        <h3 style="color: white; padding-right: 20px;">Welcome Admin!</h3>
+        <button class="button-30" role="button" [routerLink]="['/login']">Logout</button>
+    </div>
+</div>
+<div class="press"><button class="button-29" role="button" [routerLink]="['/admin/dogs/']">Back</button></div>
+<body>
+    <div class="container">
+        <br>
+        <label for="name-label" id="name-label">Upload Image:&nbsp;&nbsp;&nbsp;</label>
+        <input id="Image" type="text" placeholder="Image Link" style="height: 10px;" #image required>
+        <img src="\assets\dogtemplate.png" class="dogpic" width="350" height="200">
+        <label for="name-label" id="name-label">Name:&nbsp;&nbsp;&nbsp;</label>
+        <input id="Name" type="text" placeholder="Name"  #name required><br><br>
+        <label for="breed-label" id="breed-label">Breed:&nbsp;&nbsp;&nbsp;</label>
+        <input id="Breed" type="text" placeholder="Breed"  #breed required><br><br>
+        <label for="color-label" id="color-label">Color:&nbsp;&nbsp;&nbsp;</label>
+        <input id="Color" type="text" placeholder="Color"  #color required><br><br>
+        <label for="age-label" id="age-label">&nbsp;&nbsp;&nbsp;Age:&nbsp;&nbsp;&nbsp;</label>
+        <input id="Age" type="number" placeholder="Age"   #age required><br><br>
+        <label for="status-label" id="status-label">Notes:&nbsp;&nbsp;&nbsp;</label>
+        <input id="Status" type="text" placeholder="Notes"  #status required><br><br>
+        <button class="button-29" role="button" 
+        (click)="add(name.value, breed.value, age.value, color.value, status.value, image.value)" [routerLink]="['/admin/dogs/']">Add</button>
+    </div>
+</body>

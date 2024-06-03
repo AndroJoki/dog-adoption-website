@@ -1,0 +1,180 @@
+/* dog.component.css */
+body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.dog-card {
+    flex: 0 0 calc(30.33% - 50px);
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.add {
+    flex: 0 0 calc(30.33% - 50px);
+    margin: 20px;
+    background-color: #e9d8cc;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 20%; 
+    transition: transform 0.3s ease;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.plus {
+    margin: 0;
+    color: #ad8f7b;
+    font-size: 170px;
+}
+  
+  .dog-card:hover {
+    transform: scale(1.05);
+  }
+
+  .add:hover {
+    transform: scale(1.05);
+    opacity: 50%;
+  }
+  
+  .dog-card img {
+    width: 100%;
+    height: 150px; /* Adjust the height as needed */
+    object-fit: cover;
+  }
+  
+  .dog-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+}
+
+  .delete {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .delete:hover{
+    color: rgb(244, 147, 147);
+  }
+
+  
+.navbar {
+  display: flex;
+  position: sticky;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #212020;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  left: 0;
+  bottom: 0;
+}
+
+.logo {
+  height: 50px;
+}
+
+.navright {
+  display: flex;
+}
+
+.logout-button {
+  background-color: #595b59; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+.button-30 {
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #c93434 0, #c93434 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,#6e1e1e 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  margin: auto;
+  margin-bottom: 5px;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #5e606c 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #c93434 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #c93434 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #34353b 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+  }
+  .close:hover {
+    opacity: 1;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+  
+  
